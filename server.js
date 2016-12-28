@@ -22,6 +22,6 @@ app.get("/", function(req, res){
    console.log(JSON.stringify(results));
     res.send(JSON.stringify(results));
 });
-app.listen(8080, function(){
+app.listen(process.env.PORT, function(){
    console.log("Starting"); 
 }); 
